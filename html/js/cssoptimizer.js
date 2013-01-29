@@ -26,10 +26,10 @@ cleaner_css = function() {
         //for (var int = ss.cssRules.length - 1; int > -1; int--) {
         textforinsert = this.uotputid.html();
         for (var int = 0; int < ss.cssRules.length; int++) {
-            //if (document.querySelector(ss.cssRules[int].selectorText) != null) {
+            if (document.querySelector(ss.cssRules[int].selectorText) != null) {
             textforinsert = textforinsert + "\n" + ss.cssRules[int].cssText;
             //this.uotputid.append(pelement);
-            //}
+            }
         }
         this.uotputid.html(textforinsert);
         //alert("Hello");
